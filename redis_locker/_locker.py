@@ -1,7 +1,7 @@
 from contextlib import contextmanager
 from uuid import uuid4
 from typing import Generator, Protocol
-from ._protocol import RedisClient as Redis
+from redis import Redis
 
 
 __all__ = ["RedisLock", "RedisLocker", "RedisLockerKey"]
